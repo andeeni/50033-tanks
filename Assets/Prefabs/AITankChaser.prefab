@@ -10681,7 +10681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f466f3abe3e05624f832a34ce37a49c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: {fileID: 11400000, guid: 43c1999b93c4e124aa309a78f5051b64, type: 2}
+  currentState: {fileID: 11400000, guid: bc3dc56e7455e0a4b8604a2a07024968, type: 2}
   enemyStats: {fileID: 11400000, guid: 5d4c0800db61f85488f414b873227a7d, type: 2}
   eyes: {fileID: 4487636023762108}
   remainState: {fileID: 11400000, guid: 0c94314c6282a9d4194a682929995613, type: 2}
