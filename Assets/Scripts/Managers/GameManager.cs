@@ -156,7 +156,7 @@ public class GameManager : MonoBehaviour
     {
         var sb = new StringBuilder();
 
-        if (m_RoundWinner != null) sb.Append($"{m_RoundWinner.m_ColoredPlayerText} WINS THE ROUND!");
+        if (m_RoundWinner != null) sb.Append($"{m_RoundWinner.m_ColoredPlayerText} WINS THE ROUND! \n {m_RoundWinner.m_ColoredPlayerText} EARNS 1 POINT.");
         else sb.Append("DRAW!");
 
         sb.Append("\n\n\n\n");
