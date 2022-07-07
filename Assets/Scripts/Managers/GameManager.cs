@@ -9,8 +9,8 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public int m_NumRoundsToWin = 5;            
-    public float m_StartDelay = 3f;             
-    public float m_EndDelay = 3f;               
+    public float m_StartDelay = 5f;             
+    public float m_EndDelay = 5f;               
     public CameraControl m_CameraControl;       
     public Text m_MessageText;                  
     public GameObject[] m_TankPrefabs;
@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
         m_CameraControl.SetStartPositionAndSize();
 
         m_RoundNumber++;
-        m_MessageText.text = $"ROUND {m_RoundNumber}";
+        m_MessageText.text = $"ROUND {m_RoundNumber} \n You're on your own. Kill the rogue tanks before they get you!";
 
         yield return m_StartWait;
     }
@@ -156,8 +156,8 @@ public class GameManager : MonoBehaviour
     {
         var sb = new StringBuilder();
 
-        if (m_RoundWinner != null) sb.Append($"{m_RoundWinner.m_ColoredPlayerText} WINS THE ROUND!");
-        else sb.Append("DRAW!");
+        if (m_RoundWinner != null) sb.Append($"{m_RoundWinner.m_ColoredPlayerText} WINS THE ROUND! \n Keep going and reclaim your revenge!");
+        else sb.Append("DRAW! \n Continue the fight to the death.");
 
         sb.Append("\n\n\n\n");
 
